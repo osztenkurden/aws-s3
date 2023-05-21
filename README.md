@@ -24,7 +24,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 ```
 
-### Configuration
+## Configuration
 
 The following settings must be passed as environment variables as shown in the example. Sensitive information, especially `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`, should be [set as encrypted secrets](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables) — otherwise, they'll be public to anyone browsing your repository's source code and CI logs.
 
@@ -35,5 +35,5 @@ The following settings must be passed as environment variables as shown in the e
 | AWS_ACCESS_KEY_ID     | Your AWS Access Key. [More info here.](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)                                                                                 | `secret env`          | Yes      |                                                                          |
 | AWS_SECRET_ACCESS_KEY | Your AWS Secret Access Key. [More info here.](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)                                                                          | `secret env`          | Yes      |                                                                          |
 
-### Credits
+## Credits
 * [Brock Davis](https://github.com/brockneedscoffee)
